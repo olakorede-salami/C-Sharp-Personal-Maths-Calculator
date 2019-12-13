@@ -20,10 +20,10 @@ namespace PersonalMathsCalculator
         public static bool MathematicsTools()
         {
             Console.WriteLine("This is a maths calculator, it has many fuctions as shown below. " +
-                "\nEnter the number of the function that you would like to use. " +
                 "\nClick enter to continue \n\n");
             Console.ReadKey();
 
+            Console.WriteLine("\nEnter the number of the function that you would like to use. ");
             Console.WriteLine("1) To use +, -, * and / Calculator");
             Console.WriteLine("2) To use Square Root Calculator");
             Console.WriteLine("3) To use Power Calculation");
@@ -139,7 +139,8 @@ namespace PersonalMathsCalculator
         {
             string input;
             double num1, num2, result;
-            Console.WriteLine("\n Would you like to work out which number is bigger? ");
+            Console.WriteLine("\n If you would like to work out Max then enter " +
+                "\"Max\" or if you would like to work out Min then enter \"Min\"");
             input = Console.ReadLine();
 
             if (input == "Max")
@@ -232,5 +233,3 @@ namespace PersonalMathsCalculator
         }
     }
 }
-
-
